@@ -380,7 +380,7 @@ fi
 
 # Determine the build and runtime requirements.
 BUILD_DEPS="build-essential debhelper devscripts dpkg-dev git-core \
-gnupg libasound2 libxi6 libxt6 libxtst6 rng-tools unixodbc unzip"
+gnupg libasound2 libxi6 libxt6 libxtst6 rng-tools unixodbc unzip libdistro-info-perl"
 
 if [ "${LSB_ARCH}" == "amd64" ] && [ "${JAVA_UPSTREAM}" == "sun-java6" ]; then
     BUILD_DEPS="${BUILD_DEPS} lib32asound2 ia32-libs"
